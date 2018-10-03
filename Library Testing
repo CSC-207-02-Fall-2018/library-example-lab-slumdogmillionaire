@@ -1,3 +1,4 @@
+
 Listing of books in the library
 
 
@@ -167,6 +168,15 @@ Title:  Algorithms for functional programming
 End of book listing
 
 Reference book could not have been checked out -- return impossible
+Looking for non-existing book in library returns: null
+Trying to find Book A: 
+Title:  The Lightning Thief
+   Author:  Rick Riordan
+   ISBN:  9783551356932
+   Call Number:  QA43.W125
+   Current Holder:  
+   Due Date:  
+
 
 Listing of books in the library
 
@@ -186,12 +196,111 @@ Title:  Experiments in Java
    Collection:  Iowa Room
 
 
+Title:  The Lightning Thief
+   Author:  Rick Riordan
+   ISBN:  9783551356932
+   Call Number:  QA43.W125
+   Current Holder:  
+   Due Date:  
+
+
 Title:  Problems for Computer Solution using FORTRAN
    Author:  Henry M. Walker
    ISBN:  0-87626-654-5
    Call Number:  QA43.W34
    Current Holder:  Donald Duck
    Due Date:  March 1, 2012
+
+
+Title:  Introduction to Computing and Computer Science with Pascal
+   Author:  Henry M. Walker
+   ISBN:  0-316-91841-5
+   Call Number:  QA76.6.W3275
+   Current Holder:  Goofy
+   Due Date:  March 28, 2012
+
+
+Title:  Problems for Computer Solution using BASIC
+   Author:  Henry M. Walker
+   ISBN:  0-87626-717-7
+   Call Number:  QA76.73.B3W335
+   Collection:  Iowa Room
+
+
+Title:  Pascal:  Problem Solving and Structured Program Design
+   Author:  Henry M. Walker
+   ISBN:  0-316-91848-2
+   Call Number:  QA76.73.P2W35
+   Current Holder:  Devansh
+   Due Date:  December 22, 2018
+
+
+Title:  Computer Science 2:  Principles of Software Engineering, Data Types, and Algorithms
+   Author:  Henry M. Walker
+   ISBN:  0-673-39829-3
+   Call Number:  QA76.758.W35
+   Current Holder:  
+   Due Date:  
+
+
+Title:  The Limits of Computing
+   Author:  Henry M. Walker
+   ISBN:  0-7637-2552-8
+   Call Number:  QA76.W185
+   Current Holder:  Govind
+   Due Date:  December 22, 2018
+
+
+Title:  The Tao of Computing
+   Author:  Henry M. Walker
+   ISBN:  0-86720-206-8
+   Call Number:  QA76.W1855
+   Current Holder:  
+   Due Date:  
+
+
+Title:  Algorithms for functional programming
+   Author:  John David Stone
+   ISBN:  in process
+   Call Number:  forthcoming
+   Current Holder:  
+   Due Date:  
+
+End of book listing
+
+
+Listing of books in the library
+
+
+Title:  ED-MEDIA 2002 : World Conference on Educational Multimedia, Hypermedia & Telecommunications
+   Author:  Samuel A. Rebelsky and Philip Barker
+   ISBN:  14. 1-880094-45-2
+   Call Number:  64.2 25e
+   Current Holder:  Minnie Mouse
+   Due Date:  April 1, 2012
+
+
+Title:  Experiments in Java
+   Author:  Samuel A. Rebelsky
+   ISBN:  0201612674
+   Call Number:  64.2 R25ex
+   Collection:  Iowa Room
+
+
+Title:  The Lightning Thief
+   Author:  Rick Riordan
+   ISBN:  9783551356932
+   Call Number:  QA43.W125
+   Current Holder:  
+   Due Date:  
+
+
+Title:  Problems for Computer Solution using FORTRAN
+   Author:  Henry M. Walker
+   ISBN:  0-87626-654-5
+   Call Number:  QA43.W34
+   Current Holder:  
+   Due Date:  
 
 
 Title:  Introduction to Computing and Computer Science with Pascal
@@ -245,14 +354,6 @@ Title:  Algorithms for functional programming
    Author:  John David Stone
    ISBN:  in process
    Call Number:  forthcoming
-   Current Holder:  
-   Due Date:  
-
-
-Title:  The Lightning Thief
-   Author:  Rick Riordan
-   ISBN:  9783551356932
-   Call Number:  QA43.W125
    Current Holder:  
    Due Date:  
 
