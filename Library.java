@@ -1,3 +1,29 @@
+    /*****************************************************************
+     * Devansh Chandgothia and Govind Brahmanyapurya                 *
+     * 3243                and 3138                                  *
+     * Program for CSC 207                                           *
+     *   Library Example                                             *
+     * Assignment for Wednesday, October 3                           *
+     *****************************************************************/
+
+
+    /* ***************************************************************
+     * Academic honesty certification:                               *
+     *   Written/online sources used:                                *
+     *     http://www.cs.grinnell.edu/~walker/courses/207.fa18/      *
+     *     labs/lab-library-books.shtml                              *
+     *     http://www.cs.grinnell.edu/~walker/courses/207.fa18/      *
+     *     labs/lab-generalization.shtml                             *
+     *   Help obtained                                               *
+     *     None                                                      *
+     *   My signature below confirms that the above list of sources  *
+     *   is complete AND that I have not talked to anyone else       *
+     *   [e.g., CSC 161 students] about the solution to this problem *
+     *                                                               *
+     *   Signature: Devansh Chandgothia and Govind Brahmanyapura     *
+     *****************************************************************/
+
+
 package library;
 
 import java.util.ArrayList;
@@ -136,15 +162,37 @@ public class Library {
 		lib.returned("64.2 R25ex");
 		
 		// initialize new book
-				LibraryBook A = new CirculatingBook  ("Rick Riordan", "The Lightning Thief",
+		CirculatingBook A = new CirculatingBook  ("Rick Riordan", "The Lightning Thief",
 						                     "9783551356932", "QA43.W125");
+				
+		//try to find book before adding it 
+		System.out.println("Looking for non-existing book in library returns: " + lib.findBook(A));
 
 		// add A to library
 		lib.addBook(A);
 		
+		//Sorting the array again so that binary search is possible
+		lib.sortLibrary();
+		
+		//Finding book that exists
+		System.out.println("Trying to find Book A: " + lib.findBook(A));
+		
 		lib.checkout("Goofy", "March 28, 2012", "QA76.6.W3275");
 		
+		//checking out a few more books
+		lib.checkout("Devansh", "December 22, 2018", "QA76.73.P2W35");
+		lib.checkout("Govind", "December 22, 2018", "QA76.W185");
+		
+		//printing current status of library
+		lib.printLibrary();	
+		
+		//returning a few more books
+		lib.returned("QA76.73.P2W35");
+		lib.returned("QA76.W185");
+		lib.returned("QA43.W34");
+		
+		
 		// print final status of library
-		lib.printLibrary();		
+		lib.printLibrary();			
 	}
 }
