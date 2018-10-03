@@ -59,7 +59,7 @@ public class Book {
 
     // Modifiers
     /**
-     * set the author of the Book
+     * set the author of the specified Book
      * @param auth 
      */
     public void setAuthor (String auth) {
@@ -67,7 +67,7 @@ public class Book {
     }
     
     /**
-     * set the name of the Book
+     * set the name of the specified Book
      * @param name 
      */
     public void setTitle (String name) {
@@ -75,7 +75,7 @@ public class Book {
     }
 
     /**
-     * set the ISBN of the Book
+     * set the ISBN of the specified Book
      * @param num
      */
     /* Specify number of credits for the course

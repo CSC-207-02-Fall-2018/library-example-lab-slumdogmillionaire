@@ -86,8 +86,13 @@ public class ReferenceBook extends LibraryBook{
 	        System.out.println ("Book C is ");
 	        System.out.println (C.toString());
 	        
+	        //testing the checkout method
 	        C.checkout("Govind", "09/30/2018");
+	        
+	        //testing the returned method
 	        C.returned();
+	        
+	        //testing the circulationStatus method
 	        System.out.println("Circulation status of \"" + C.title + "\" : " + C.circulationStatus());
 	       
 	        

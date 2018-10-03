@@ -3,40 +3,73 @@ package library;
 public class CirculatingBook extends LibraryBook{
 	protected String currentHolder;
 	protected String dueDate;
-	
+
+	/**
+	 * Constructor for CirculatingBook with inputs fields author, title, ISBN, call number
+	 * @param au: author of the LibraryBook
+	 * @param ti: title of the LibraryBook
+	 * @param num: ISBN of the LibraryBook
+	 * @param callNum: ISBN of the LibraryBook
+	 */
 	CirculatingBook (String au,  String ti, String num, String callNum) {
         super(au, ti, num, callNum);
         currentHolder = "";
     	dueDate = "";
     }
-
+	
+	/**
+	 * @return current holder of the CirculatingBook
+	 */
 	public String getCurrentHolder() {
 		return currentHolder;
 	}
 
+	/**
+	 * sets the current holder of the specified Circulating book
+	 * @param currentHolder
+	 */
 	public void setCurrentHolder(String currentHolder) {
 		this.currentHolder = currentHolder;
 	}
-
+	
+	/**
+	 * @return current holder of the CirculatingBook
+	 */
 	public String getDueDate() {
 		return dueDate;
 	}
-
+	
+	/**
+	 * sets the due date of the specified CirculatingBook
+	 * @param dueDate
+	 */
 	public void setDueDate(String dueDate) {
 		this.dueDate = dueDate;
 	}
-
+	
+	/**
+	 * Sets the patron and due date fields to the appropriate values to 
+	 * signify book has been checked out
+	 */
 	public void checkout(java.lang.String patron,
             java.lang.String due) {
 		currentHolder = patron;
     	dueDate = due;
 	}
 	
+	/**
+	 * Sets the patron and due date fields to NULL to signify book has been returned
+	 */
 	public void returned() {
 		currentHolder = "";
     	dueDate = "";
 	}
 	
+	/**
+	 * Checks circulation status of a book
+	 * @return a message if book if available
+	 *         the name of the current holder and the due date if the book is checked out
+	 */
 	public java.lang.String circulationStatus() {
 		String status= "";
 		if(this.dueDate.compareTo("")==0) {
@@ -48,6 +81,9 @@ public class CirculatingBook extends LibraryBook{
 		return status;
 	}
 	
+	/**
+	 * @return title, author, ISBN, call number, current holder, due date as a String for printing
+	 */
 	public String toString () {
 		return super.toString() +  "   Current Holder:  " + currentHolder  
 					+ "\n   Due Date:  " + dueDate + "\n";

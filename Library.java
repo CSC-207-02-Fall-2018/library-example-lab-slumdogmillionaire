@@ -135,6 +135,13 @@ public class Library {
 		lib.returned("QA76.6.W3275");
 		lib.returned("64.2 R25ex");
 		
+		// initialize new book
+				LibraryBook A = new CirculatingBook  ("Rick Riordan", "The Lightning Thief",
+						                     "9783551356932", "QA43.W125");
+
+		// add A to library
+		lib.addBook(A);
+		
 		lib.checkout("Goofy", "March 28, 2012", "QA76.6.W3275");
 		
 		// print final status of library

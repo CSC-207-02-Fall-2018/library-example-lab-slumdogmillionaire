@@ -5,10 +5,10 @@ public abstract class LibraryBook  extends Book implements Comparable<LibraryBoo
 	
 	/**
 	 * Constructor for LibraryBook with all input fields
-	 * @param au: author of the ReferenceBook
-	 * @param ti: title of the ReferenceBook
-	 * @param num: ISBN of the ReferenceBook
-	 * @param callNum: ISBN of the ReferenceBook
+	 * @param au: author of the LibraryBook
+	 * @param ti: title of the LibraryBook
+	 * @param num: ISBN of the LibraryBook
+	 * @param callNum: ISBN of the LibraryBook
 	 */
 	LibraryBook (String au,  String ti, String num, String callNum) {
         author = au;
@@ -17,10 +17,17 @@ public abstract class LibraryBook  extends Book implements Comparable<LibraryBoo
         callNumber = callNum;
     }
 	
+	/**
+	 * @return the call number of the LibraryBook
+	 */
 	public String getCallNumber() {
 		return callNumber;
 	}
 	
+	/**
+	 * the new call number of the LibraryBook
+	 * @param callNumber
+	 */
 	public void setCallNumber(String callNumber) {
 		this.callNumber = callNumber;
 	}
@@ -51,35 +58,4 @@ public abstract class LibraryBook  extends Book implements Comparable<LibraryBoo
                 + "\n   ISBN:  " + ISBN
                 + "\n   Call Number:  " + callNumber + "\n"); 
 	}
-	
-	// method for testing
-    public static void main (String[] args) 
-        throws Exception {
-
-        // create two courses, using the two constructors
-        Book A = new Book ( "Rick Riordan", "The Lightning Thief", "9783551356932");
-        Book B = new Book ("F. Scott Fitzgerald", "The Great Gatsby", "97881471229015");
-        Book C = new Book ( "Donald Trump", "Trump: The Art of the Deal", "9781299011298");
-
-        // print results of initialization
-        /* first use toString, then use extractors */
-        System.out.println ("Initialization");
-        System.out.println ("Book A is ");
-        System.out.println (A.toString());
-        System.out.println ("Book B is ");
-        System.out.println ("\nTitle:  " + B.getTitle());
-        System.out.println ("   Author:  " + B.getAuthor()); 
-        System.out.println ("   ISBN:  " + B.getISBN() + "\n"); 
-        System.out.println ("Book C is ");
-        System.out.println (C.toString());
-        
-        // set other fields of yourCourse
-        C.setTitle ("Of Thee I Sing");
-        C.setAuthor ("Barack Obama");
-        C.setISBN("9780307917218");
-
-        // print results of modifications
-        System.out.println ("\nAfter modification");
-        System.out.println ("Book C is \n" + C);
-    }
 }
